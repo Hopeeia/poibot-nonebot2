@@ -75,6 +75,10 @@ class Bot(BaseBot):
     async def send(self, event: Event, message: Union[str, Message,
                                                       MessageSegment],
                    **kwargs) -> Any:
+        """
+
+        :rtype: object
+        """
         ...
 
     async def send_private_msg(self,

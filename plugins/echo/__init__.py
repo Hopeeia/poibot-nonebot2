@@ -11,6 +11,9 @@ plugin_config = Config(**global_config.dict())
 echo = on_command("echo", permission=Permission(), priority=1)
 
 
+# 输入echo加上你要说的话，bot就是复读机
+
 @echo.handle()
 async def echo_escape(bot: Bot, event: MessageEvent):
     await bot.send(message=event.get_message(), event=event)
+    await bot.finish()
