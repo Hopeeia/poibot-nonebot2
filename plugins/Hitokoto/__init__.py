@@ -8,7 +8,7 @@ from .config import Config
 
 global_config = nonebot.get_driver().config
 plugin_config = Config(**global_config.dict())
-#输入yy，即刻获得经典名言(doge
+
 hitokoto = on_command("yy", permission=Permission(), priority=1)
 
 
